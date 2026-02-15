@@ -11,9 +11,9 @@ st.set_page_config(page_title="Bank Marketing Model Explorer", layout="wide")
 
 ROOT = Path(__file__).parent
 
-RESULTS_PATH = ROOT / "reports" / "models_all" / "results_all.json"
+RESULTS_PATH = ROOT / "results_all.json"
 MODELS_DIR = ROOT / "model"  # For Streamlit Cloud deployment
-ROC_DIR = ROOT / "reports" / "models_all"
+ROC_DIR = ROOT  # ROC curves are at root level
 
 
 def interpret_mcc(mcc_value):
